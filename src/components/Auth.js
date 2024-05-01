@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {useCookies} from 'react-cookie';
 
 export default function Auth() {
+  const backendUrl = process.env.BACKEND_URL;
   
   const [cookies,setCookie,removeCookie] = useCookies(null)
   const [isLogin, setIsLogin] = useState(true);
