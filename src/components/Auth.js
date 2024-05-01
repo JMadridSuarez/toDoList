@@ -33,7 +33,7 @@ export default function Auth() {
         body:JSON.stringify({email,password})
       }
     )
-    const data = await response.json();
+    const data = response.json();
     if(response.detail){
       setError(response.detail)
     }else{
